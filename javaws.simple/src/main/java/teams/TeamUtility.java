@@ -10,7 +10,7 @@ public class TeamUtility {
     private Map<String, Team> teams;
 
     public void makeTestTeams() {
-        teams = new HashMap<String, Team>();
+        teams = new HashMap<>();
         Team team1 = new Team(
                 Arrays.asList(new Player("Christiano Ronaldo", "Ronaldo")),
                 "Arsenal"

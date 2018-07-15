@@ -1,6 +1,5 @@
 package teams;
 
-import javax.jws.WebMethod;
 import javax.jws.WebService;
 import java.util.Collection;
 
