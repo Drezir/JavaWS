@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>soap</module>
+        <module>rest</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -16,6 +17,9 @@
         <jdk>1.8</jdk>
         <lombok.version>1.18.0</lombok.version>
         <jodatime.version>2.10</jodatime.version>
+        <javax.ws.rs.version>2.1</javax.ws.rs.version>
+        <undertow.version>2.0.11.Final</undertow.version>
+        <resteasy.version>3.6.0.Final</resteasy.version>
     </properties>
 
     <dependencyManagement>
@@ -30,6 +34,30 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${jodatime.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>${javax.ws.rs.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.undertow/undertow-core -->
+            <dependency>
+                <groupId>io.undertow</groupId>
+                <artifactId>undertow-core</artifactId>
+                <version>${undertow.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.undertow/undertow-servlet -->
+            <dependency>
+                <groupId>io.undertow</groupId>
+                <artifactId>undertow-servlet</artifactId>
+                <version>${undertow.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-undertow -->
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-undertow</artifactId>
+                <version>${resteasy.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
